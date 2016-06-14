@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Tooltipper</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="../src/jquery.tooltipper.js"></script>
+		<link rel="stylesheet" type="text/css" href="../src/jquery.tooltipper.css">	
+		<style>
+			.element {
+				background: gray;				
+				width: 300px;
+				left: 200px;
+			}
+
+			.element2 {
+				background: gray;
+				position: relative;
+				width: 300px;
+				height: 300px;
+				left: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Top|Center</span>
+			<div class="tooltipper" data-event="click" data-position="top|center">
+				Tooltip legal <div data-close>X</div>
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Bottom|Center</span>
+			<div class="tooltipper" data-event="hover" data-position="bottom|center">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Left|Center</span>
+			<div class="tooltipper" data-event="hover" data-position="left|center">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Right|Center</span>
+			<div class="tooltipper" data-event="hover" data-position="right|center">
+				Tooltip legal
+			</div>
+		</div>
+
+		<!-- POS LEFT -->
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Top|Left</span>
+			<div class="tooltipper" data-event="hover" data-position="top|left">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Bottom|Left</span>
+			<div class="tooltipper" data-event="hover" data-position="bottom|left">
+				Tooltip legal
+			</div>
+		</div>
+
+		<!-- POS RIGHT -->
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Top|Right</span>
+			<div class="tooltipper" data-event="hover" data-position="top|right">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Bottom|Right</span>
+			<div class="tooltipper" data-event="hover" data-position="bottom|right">
+				Tooltip legal
+			</div>
+		</div>
+
+		<!-- POS TOP -->
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Left|Top</span>
+			<div class="tooltipper" data-event="hover" data-position="left|top">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Right|Top</span>
+			<div class="tooltipper" data-event="hover" data-position="right|top">
+				Tooltip legal
+			</div>
+		</div>
+
+		<!-- POS BOTTOM -->
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Left|Bottom</span>
+			<div class="tooltipper" data-event="hover" data-position="left|bottom">
+				Tooltip legal
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element2">
+			<span>Test Tooltipper Click Right|Bottom</span>
+			<div class="tooltipper" data-event="hover" data-position="right|bottom">
+				Tooltip legal
+			</div>
+		</div>
+
+		<!-- FINISH -->
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div class="element">
+			<span>Test Tooltipper Click Top|Center</span>
+			<div class="tooltipper" data-event="hover" data-position="top|center">
+				Tooltip legal
+			</div>
+		</div>
+		<script>
+			$( function() {
+				// $('[data-close]').on('click', function(e) {					
+				// 	e.stopImmediatePropagation();
+				// });
+
+				$('body').tooltipper();
+			} );
+		</script>
+	</body>
+</html>

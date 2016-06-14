@@ -1,0 +1,11 @@
+.tooltipper {
+	background: red;
+	color: white;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+}
+.tooltipper.tooltipper-block {
+	display: inline-block;
+}
